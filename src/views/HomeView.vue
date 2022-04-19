@@ -163,20 +163,10 @@
       <p class="lightGray fontBlack font1em" style="padding-left: 2em;">How long does it take for my registration to be processed?</p>
     </div>
   </div>
-  <div class="footer">
-    <div class="footerComponents">
-      <h1 class="darkOrange title fontItalic font2em">Ready to make money your way?</h1>
-    </div>
-    <div class="footerComponents">
-      <h1>Get started</h1>
-    </div>
-    <div class="footerComponents">
-      <h1>Get started</h1>
-    </div>
-  </div>
+  <Footer />
 </template>
 
-<style>
+<style scoped>
 .topHome{
   padding-top: 5em;
   display: flex;
@@ -218,7 +208,6 @@
 .middleHome{
   width: 100%;
   height: 210em;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -313,22 +302,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.footer{
-  width: 100%;
-  height: 80em;
-  border: 1px solid black;
-}
-.footerComponents{
-  width: 100%;
-  height: 10%;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footerComponents:nth-child(2){
-  height: 5%;
-}
 .select {
   width: 20em;
   height: 2.3em;
@@ -373,12 +346,12 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    Footer
   }
 }
 </script>
