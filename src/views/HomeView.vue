@@ -2,65 +2,69 @@
   <div class="topHome">
     <div class="topHomeDistribuation">
       <div class="boyImg">
-
+        <img src="../assets/img/Plomero.png" alt="Plomero">
       </div>
       <div class="textRight">
-        <h1>Earn money <br> your way</h1>
-        <p>See how much you can make tasking <br> on ProviTask</p>
-        <label for="area">Select your area <br>
-          <select name="" id="area"></select>
-        </label>
-        <label for="area">Choose a Category <br>
-          <select name="" id="area"></select>
-        </label>
-        <p>16$ per hour</p>
+        <h1 class="orange title fontItalic">Earn money <br> your way</h1>
+        <p class="gray fontBlack font0em">See how much you can make tasking <br> on ProviTask</p>
+        <label for="area" class="gray fontBold font1em">Select your area</label>
+        <select name="" id="area" class="select">
+          <option>Atlanta</option>
+        </select>
+        <label for="area" class="gray fontBold font1em">Choose a Category</label>
+        <select name="" id="category" class="select">
+          <option>Delivery</option>
+        </select>
+        <p class="orange title fontBold font4em">16$ per hour</p>
+        <button class="button fontItalic white font2em">Get started</button>
+        <p class="gray fontBlack font1em">Already have an account? Sign in</p>
       </div>
-    </div>
-    <div class="textBottom">
-      <button>Get started</button>
-      <p>Already have an account? Sign in</p>
     </div>
   </div>
   <div class="middleHome">
     <div class="download">
       <div class="content"> 
-        <p>For better services download now</p>
+        <p class="gray fontBold font1em">For better services download now</p>
       </div>
       <div class="content"> 
-
+        <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/download-on-the-app-store-logo-png-23.png" width="350px" alt="Download on the app store logo png" />
       </div>
       <div class="content"> 
-
+        <img src="https://www.freepnglogos.com/uploads/itunes-logo/google-play-itunes-png-logo-4.png" width="187px" alt="google play itunes png logo" />
       </div>
     </div>
     <div class="workDescription">
-      <h1>Flexible work, at your <br> fingertips</h1>
-      <p>find local jobs that fit your skills and schedule. with TaskRabbit, you have <br> the freedom and  support to be your own boss</p>
+      <h1 class="title blue fontBold font4em">Flexible work, at your <br> fingertips</h1>
+      <p class="lightGray fontBlack" style="font-size: 24px;">Find local jobs that fit your skills and schedule. with TaskRabbit, 
+      you have <br> the freedom and  support to be your own boss</p>
     </div>
     <div class="workDescription">
       <div class="workImg">
-        <h1>Be your own <br> boss</h1>
-        <p>Work how, when, and <br>where you want. Offer ser- <br>
+        <img src="../assets/img/dinero.png" alt="money" style="width:44%;">
+        <h1 class="gray fontBold font1em">Be your own <br> boss</h1>
+        <p class="lightGray fontBlack font0em" style="margin-top:0px;margin-bottom:0px;letter-spacing: 1px;">Work how, when, and <br>where you want. Offer ser- <br>
         vices in 50+ categories <br> and set a flexible schedule <br>
         and work area.</p>
       </div>
       <div class="workImg">
-        <h1>Set your own <br> rates</h1>
-        <p>You keep 100% of what <br> you charge, plus tips! In- <br>
+        <img src="../assets/img/boss.png" alt="money" style="width:27%;">
+        <h1 class="gray fontBold font1em">Set your own <br> rates</h1>
+        <p class="lightGray fontBlack font0em" style="margin-top:0px;margin-bottom:0px;letter-spacing: 1px;">You keep 100% of what <br> you charge, plus tips! In- <br>
         voice and get paid directly <br> through our secure pay- <br>
         ment system.</p>
       </div>
       <div class="workImg">
-        <h1>Grow your <br> business</h1>
-        <p>We connect you with cli- <br> ents in your area, and <br>
+        <img src="../assets/img/hand-shake.png" alt="money" style="width:47%;">
+        <h1 class="gray fontBold font1em">Grow your <br> business</h1>
+        <p class="lightGray fontBlack font0em" style="margin-top:0px;margin-bottom:0px;letter-spacing: 1px;">We connect you with cli- <br> ents in your area, and <br>
         ways to market yourself -- <br> so you can focus on what <br>
         you do best.</p>
       </div>
     </div>
     <div class="whatIs">
       <div class="whatIsContent">
-        <h1>What is ProviTask?</h1>
-        <p>it is a pleasure for us that you are <br>
+        <h1 class="title blue fontBold font2em">What is ProviTask?</h1>
+        <p class="lightGray fontBlack" style="font-size:25px;margin-top:50px;line-height:33px;letter-spacing: 1px;">It is a pleasure for us that you are <br>
         part of our Provitask family, wheter <br>
         you are a client or a professional,<br>
         our interactive platform is linked to <br>
@@ -73,11 +77,11 @@
         sary knowledge and equipment.</p>
       </div>
       <div class="whatIsContent">
-
+        <img src="../assets/img/fixed.png" alt="money" style="width:100%;">
       </div>
     </div>
     <div class="started">
-      <h1>getting started</h1>
+      <h1 class="title blue fontBold font4em">Getting started</h1>
     </div>
     <div class="started">
       <div class="startedDescription">
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="started">
-      <h1>Your questions, answered</h1>
+      <h1 class="title blue fontBold font4em">Your questions, answered</h1>
     </div>
     <div class="helpers">
       <p>What`s required to become a Tasker?</p>
@@ -136,7 +140,7 @@
   </div>
   <div class="footer">
     <div class="footerComponents">
-      <h1>Ready to make money your way?</h1>
+      <h1 class="darkOrange title fontItalic font2em">Ready to make money your way?</h1>
     </div>
     <div class="footerComponents">
       <h1>Get started</h1>
@@ -154,39 +158,37 @@
   flex-direction: column;
   width: 100%;
   height: 60em;
-  border: 1px solid black;
 }
 .topHomeDistribuation{
   display: flex;
   width: 100%;
-  height: 80%;
-  border: 1px solid black;
+  height: 100%;
 }
 .boyImg{
   width: 55%;
   height: 100%;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .textRight{
   width: 45%;
   height: 100%;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   text-align: end;
 }
-.textBottom{
-  width: 100%;
-  height: 20%;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.button {
+  width: 78%;
+  height: 6%;
+  background-color: #180692;
+  border: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 .middleHome{
   width: 100%;
@@ -198,7 +200,7 @@
 .download{
   width: 100%;
   height: 10em;
-  border: 1px solid black;
+  border-top: 3px solid #e5841d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +208,6 @@
 .content{
   width: 20%;
   height: 100%;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +219,6 @@
   width: 100%;
   height: 25em;
   text-align: center;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,16 +228,14 @@
   height: 40em;
   flex-direction: initial;
 }
-
 .workImg{
   width: 100%;
   height: 100%;
   text-align: initial;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding-left: 4em;
 }
 .whatIs{
   width: 100%;
@@ -301,6 +299,29 @@
 }
 .footerComponents:nth-child(2){
   height: 5%;
+}
+.select {
+  width: 20em;
+  height: 2.3em;
+  padding-left: 1em;
+  font-size: 20px;
+  border: 1px solid #8080805e;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.font4em{
+  font-size: 3.9em;
+}
+.font2em{
+  font-size: 3em;
+}
+.font1em{
+  font-size: 1.8em;
+}
+.font0em{
+  font-size: 1.3em;
 }
 </style>
 
