@@ -42,21 +42,21 @@
       <div class="workImg">
         <img src="../assets/img/dinero.png" alt="money" style="width:44%;">
         <h1 class="gray fontBold font1em">Be your own <br> boss</h1>
-        <p class="lightGray fontBlack font0em" style="margin-top:0px;margin-bottom:0px;letter-spacing: 1px;">Work how, when, and <br>where you want. Offer ser- <br>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing: 1px;">Work how, when, and <br>where you want. Offer ser- <br>
         vices in 50+ categories <br> and set a flexible schedule <br>
         and work area.</p>
       </div>
       <div class="workImg">
         <img src="../assets/img/boss.png" alt="money" style="width:27%;">
         <h1 class="gray fontBold font1em">Set your own <br> rates</h1>
-        <p class="lightGray fontBlack font0em" style="margin-top:0px;margin-bottom:0px;letter-spacing: 1px;">You keep 100% of what <br> you charge, plus tips! In- <br>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing: 1px;">You keep 100% of what <br> you charge, plus tips! In- <br>
         voice and get paid directly <br> through our secure pay- <br>
         ment system.</p>
       </div>
       <div class="workImg">
         <img src="../assets/img/hand-shake.png" alt="money" style="width:47%;">
         <h1 class="gray fontBold font1em">Grow your <br> business</h1>
-        <p class="lightGray fontBlack font0em" style="margin-top:0px;margin-bottom:0px;letter-spacing: 1px;">We connect you with cli- <br> ents in your area, and <br>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing: 1px;">We connect you with cli- <br> ents in your area, and <br>
         ways to market yourself -- <br> so you can focus on what <br>
         you do best.</p>
       </div>
@@ -85,43 +85,66 @@
     </div>
     <div class="started">
       <div class="startedDescription">
-        <h1>1. Sign Up</h1>
-        <p>Create your account. Then <br>
-        download the Tasker app <br>
-        to continue registration</p>
+        <div class="roundContainer">
+          <img src="../assets/img/add-user.png">
+        </div>
+        <h1 class="fontBold font1em gray">1. Sign Up</h1>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing:1px;">Create your account. Then <br>
+          download the Tasker app <br>
+          to continue registration
+        </p>
       </div>
       <div class="startedDescription">
-        <h1>2. Build your profile</h1>
-        <p>Select what services you <br>
-        want to offer and where</p>
+        <div class="roundContainer">
+          <img src="../assets/img/resume.png">
+        </div>
+        <h1 class="fontBold font1em gray">2. Build your profile</h1>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing:1px;">Select what services you <br>
+          want to offer and where
+        </p>
       </div>
       <div class="startedDescription">
-        <h1>3. Verify your eligibility <br>
+        <div class="roundContainer">
+          <img src="../assets/img/verified.png">
+        </div>
+        <h1 class="fontBold font1em gray">3. Verify your eligibility <br>
         to task</h1>
-        <p>Confirm your identity and <br> 
-        submit business verifications, <br>
-        as required</p>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing:1px;">Confirm your identity and <br> 
+          submit business verifications, <br>
+          as required
+        </p>
       </div>
     </div>
     <div class="started">
       <div class="startedDescription">
-        <h1>4. Pay registration fee</h1>
-        <p>In applicable cities, we <br> 
-        charge a $25 registra fee <br>
-        that helps us provide the <br>
-        best service to you</p>
+        <div class="roundContainer">
+          <img src="../assets/img/credictCard.png">
+        </div>
+        <h1 class="fontBold font1em gray">4. Pay registration <br> fee</h1>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing:1px;">In applicable cities, we <br> 
+          charge a $25 registra fee <br>
+          that helps us provide the <br>
+          best service to you
+        </p>
       </div>
       <div class="startedDescription">
-        <h1>5. Set your scheedule <br>
+        <div class="roundContainer">
+          <img src="../assets/img/hito.png">
+        </div>
+        <h1 class="fontBold font1em gray">5. Set your scheedule <br>
         and work are</h1>
-        <p>Set your weekly availabily- <br>
-        ty and opt in to receive <br>
-        same-day jobs</p>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing:1px;">Set your weekly availabily- <br>
+          ty and opt in to receive <br>
+          same-day jobs
+        </p>
       </div>
       <div class="startedDescription">
-        <h1>6. Start getting jobs</h1>
-        <p>Grow your business on your
-          own terms.
+        <div class="roundContainer">
+          <img src="../assets/img/trabajo-en-equipo.png">
+        </div>
+        <h1 class="fontBold font1em gray">6. Start getting jobs</h1>
+        <p class="lightGray fontBlack font0em margin" style="letter-spacing:1px;">Grow your business on your
+          <br> own terms.
         </p>
       </div>
     </div>
@@ -129,13 +152,15 @@
       <h1 class="title blue fontBold font4em">Your questions, answered</h1>
     </div>
     <div class="helpers">
-      <p>What`s required to become a Tasker?</p>
-      <p>Do i need experience to task?</p>
-      <p>How do i get jobs?</p>
-      <p>How do i get paid?</p>
-      <p>Where does Provitask operate?</p>
-      <p>What categories can i task in on Provitask?</p>
-      <p>How long does it take for my registration to be processed?</p>
+      <p class="lightGray fontBlack font1em" style="padding-left: 2em;">What`s required to become a Tasker?</p>
+      <p class="lightGray fontBlack font1em" style="padding-left: 2em;">Do i need experience to task?</p>
+      <p class="lightGray fontBlack font1em" style="padding-left: 2em;">How do i get jobs?</p>
+      <p class="lightGray fontBlack font1em" style="padding-left: 2em;">How do i get paid?</p>
+      <div class="provitaskOperate">
+        <p class="white fontBold font1em margin">Where does Provitask operate?</p>
+      </div>
+      <p class="lightGray fontBlack font1em" style="padding-left: 2em;">What categories can i task in on Provitask?</p>
+      <p class="lightGray fontBlack font1em" style="padding-left: 2em;">How long does it take for my registration to be processed?</p>
     </div>
   </div>
   <div class="footer">
@@ -240,7 +265,6 @@
 .whatIs{
   width: 100%;
   height: 65em;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,7 +272,6 @@
 .whatIsContent{
   width: 50%;
   height: 100%;
-  border: 1px solid black;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -260,7 +283,6 @@
   align-items: center;
   width: 100%;
   height: 10em;
-  border: 1px solid black;
 }
 .started:nth-child(6){
   height: 30em;
@@ -268,14 +290,21 @@
 .started:nth-child(7){
   height: 30em;
 }
-.startedDescription{
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-  flex-direction: column;
+.roundContainer {
+  width: 28%;
+  height: 33%;
+  border-radius: 147px;
+  background-color: #e5841d;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.startedDescription{
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+
 }
 .helpers{
   width: 100%;
@@ -322,6 +351,23 @@
 }
 .font0em{
   font-size: 1.3em;
+}
+.margin{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.provitaskOperate{
+  width: 40em;
+  height: 3em;
+  margin-left: 3%;
+  background-color: #e5841d;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  border-top-right-radius: 22px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
 }
 </style>
 
