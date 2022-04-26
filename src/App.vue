@@ -31,8 +31,10 @@ src: url('./assets/fonts/GraphikBold.otf');
   src: url('./assets/fonts/GraphikRegular.otf');
 }
 body{
-  padding-left: 3em;
-  padding-right: 3em;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
   letter-spacing: 3px;
 }
 .fontBlack{
