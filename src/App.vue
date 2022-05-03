@@ -1,84 +1,114 @@
 <template>
   <nav class="nav">
-    <div class="logoContainer "></div>
-    <router-link to="/" class="menuOptions"><p class="fontBlack lightGray font0em letterSpacing">HOME</p></router-link> 
-    <router-link to="/Locations" class="menuOptions"><p class="fontBlack lightGray font0em letterSpacing">LOCATIONS</p></router-link>
-    <router-link to="/Services" class="menuOptions"><p class="fontBlack lightGray font0em letterSpacing">SERVICES</p></router-link>
+    <div class="logoContainer"></div>
+    <router-link to="/" class="menuOptions"
+      ><p class="fontBlack lightGray font0em letterSpacing">
+        HOME
+      </p></router-link
+    >
+    <router-link to="/Locations" class="menuOptions"
+      ><p class="fontBlack lightGray font0em letterSpacing">
+        LOCATIONS
+      </p></router-link
+    >
+    <router-link to="/Services" class="menuOptions"
+      ><p class="fontBlack lightGray font0em letterSpacing">
+        SERVICES
+      </p></router-link
+    >
     <div class="midleSpace"></div>
-    <router-link to="/SignUp" class="menuOptions"><p class="fontBlack lightGray font0em letterSpacing">Sign up</p></router-link>
-    <router-link to="/Login" class="menuOptions"><p class="fontBlack lightGray font0em letterSpacing">Login</p></router-link>
+    <router-link to="/SignUp" class="menuOptions"
+      ><p class="fontBlack lightGray font0em letterSpacing">
+        Sign up
+      </p></router-link
+    >
+    <router-link to="/Login" class="menuOptions"
+      ><p class="fontBlack lightGray font0em letterSpacing">
+        Login
+      </p></router-link
+    >
     <router-link to="/JoinTo" class="menuOptions">
-    <div class="joinContainer">
-      <p class="fontBlack fontBold font0em white letterSpacing" style="margin-top: 0px;margin-bottom: 0px;">Join to</p>
-      <img src="./assets/img/martillo.png" alt="hammer" style="width: 23%;">
-    </div>
+      <div class="joinContainer">
+        <p
+          class="fontBlack fontBold font0em white letterSpacing"
+          style="margin-top: 0px; margin-bottom: 0px"
+        >
+          Join to
+        </p>
+        <img src="./assets/img/martillo.png" alt="hammer" style="width: 23%" />
+      </div>
     </router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
 @font-face {
-font-family: GraphikBold;
-src: url('./assets/fonts/GraphikBold.otf');
+  font-family: GraphikBold;
+  src: url("./assets/fonts/GraphikBold.otf");
 }
 @font-face {
   font-family: GraphikBoldItalic;
-  src: url('./assets/fonts/GraphikBoldItalic.otf');
+  src: url("./assets/fonts/GraphikBoldItalic.otf");
 }
 @font-face {
   font-family: GraphikBlack;
-  src: url('./assets/fonts/GraphikRegular.otf');
+  src: url("./assets/fonts/GraphikRegular.otf");
 }
-body{
+body {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
   margin-left: 0px;
   letter-spacing: 3px;
 }
-.fontBlack{
+li {
+  list-style-image: url(assets/img/proximo.png);
+  vertical-align: top;
+  font-size: 20px;
+}
+.fontBlack {
   font-family: GraphikBlack;
 }
-.fontBold{
+.fontBold {
   font-family: GraphikBold;
 }
-.fontItalic{
+.fontItalic {
   font-family: GraphikBoldItalic;
 }
-.gray{
+.gray {
   color: #5b5b5b;
 }
-.lightGray{
-  color: #26262661;;
+.lightGray {
+  color: #26262661;
 }
-.lightOrange{
+.lightOrange {
   color: #df8a5d;
 }
-.orange{
+.orange {
   color: #e5841d;
-}	
-.darkOrange{
+}
+.darkOrange {
   color: #a15228;
 }
-.blue{
+.blue {
   color: #180692;
 }
-.darkBlue{
+.darkBlue {
   color: #11046d;
 }
-.white{
+.white {
   color: #fff;
 }
-.title{
+.title {
   font-size: 5em;
   margin-top: 0;
   margin-bottom: 0;
 }
-.menuOptions:nth-child(8){
+.menuOptions:nth-child(8) {
   width: 10em;
 }
-.nav{
+.nav {
   display: flex;
   width: 100%;
   height: 5em;
@@ -86,16 +116,16 @@ body{
   align-items: center;
   text-align: center;
 }
-.logoContainer{
+.logoContainer {
   width: 10%;
   height: 100%;
   padding-left: 1em;
 }
-.midleSpace{
+.midleSpace {
   width: 28%;
   height: 100%;
 }
-.menuOptions{
+.menuOptions {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,7 +134,7 @@ body{
   text-decoration: none;
   color: black;
 }
-.joinContainer{
+.joinContainer {
   height: 2.2em;
   width: 100%;
   background-color: #e5841d;
@@ -115,7 +145,7 @@ body{
   justify-content: center;
   align-items: center;
 }
-.letterSpacing{
+.letterSpacing {
   letter-spacing: 0px;
 }
 </style>

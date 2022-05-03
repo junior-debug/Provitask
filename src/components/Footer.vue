@@ -1,10 +1,10 @@
 <script>
-import TitleFooter from './TitleFooter.vue'
+import TitleFooter from "./TitleFooter.vue";
 export default {
   name: "Footer",
   components: {
-    TitleFooter
-  }
+    TitleFooter,
+  },
 };
 </script>
 <template>
@@ -33,27 +33,22 @@ export default {
         </div>
       </div>
     </div>
-    <img class="footer_2" src="@/assets/img/work-tools-on-white-background-top-view.png" alt="">
+    <img
+      class="footer_2"
+      src="@/assets/img/work-tools-on-white-background-top-view.png"
+      alt=""
+    />
     <div class="footer_3">
       <div class="containerColumns">
         <div>
           <div></div>
-          <p class="description fontBlack"> 
-            It is a pleasure for us that
-            you are part of our Provitask 
-            family, whether you are 
-            a client or supplier, our
-            interactive platform is
-            linked to the daily work of
-            our home lives and work
-            centers, we are satisfied to
-            be able to help our clients
-            to have a longer life easy,
-            without worrying about
-            doing usual complicated
-            tasks, often not having the
-            necessary knowledge and
-            equipment
+          <p class="description fontBlack">
+            It is a pleasure for us that you are part of our Provitask family,
+            whether you are a client or supplier, our interactive platform is
+            linked to the daily work of our home lives and work centers, we are
+            satisfied to be able to help our clients to have a longer life easy,
+            without worrying about doing usual complicated tasks, often not
+            having the necessary knowledge and equipment
           </p>
         </div>
         <div>
@@ -91,25 +86,38 @@ export default {
             </ul>
           </div>
           <div>
-            <h3 class="fontBold"> For better services download now</h3>
-            <div>
-              <img src="@/assets/img/download-on-the-app-store-logo-png-23.png" style="width: 170px" alt="">
-              <img src="https://www.freepnglogos.com/uploads/itunes-logo/google-play-itunes-png-logo-4.png" style="width: 160px" alt="">
+            <h3 class="fontBold">For better services download now</h3>
+            <div class="social">
+              <img
+                src="@/assets/img/download-on-the-app-store-logo-png-23.png"
+                style="width: 170px"
+                alt=""
+              />
+              <img
+                src="https://www.freepnglogos.com/uploads/itunes-logo/google-play-itunes-png-logo-4.png"
+                style="width: 160px"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
-      <p class="fontBlack">Copyright 2021 | ProviTask. All Rights Reserved</p>
+      <p class="fontBlack copyright">
+        Copyright 2021 | ProviTask. All Rights Reserved
+      </p>
     </div>
   </footer>
 </template>
 <style scoped>
-
 .footer_1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(90deg, rgba(248,254,252,255) 10%, rgba(210,221,212,255) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 254, 252, 255) 10%,
+    rgba(210, 221, 212, 255) 100%
+  );
   padding: 50px 50px;
 }
 .footer_2 {
@@ -135,6 +143,12 @@ export default {
 }
 .description {
   width: 280px;
-  
+}
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+.copyright {
+  text-align: center;
 }
 </style>
