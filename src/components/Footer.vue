@@ -11,10 +11,10 @@ export default {
   <footer>
     <div class="footer_1">
       <div class="footerComponents">
-        <h1>Ready to make money your way?</h1>
+        <h1 class="fontBold orange ready">Ready to make money your way?</h1>
       </div>
       <div class="footerComponents">
-        <h1>Get started</h1>
+        <button class="button fontItalic white">Get started</button>
       </div>
       <div class="download">
         <div>
@@ -150,5 +150,18 @@ export default {
 }
 .copyright {
   text-align: center;
+}
+.ready {
+  font-style: italic;
+  margin-bottom: 40px;
+}
+.button {
+  width: 310px;
+  height: 50px;
+  background-color: #180692;
+  border: none;
+  border-radius: 12px;
+  font-size: 27px;
+  margin-bottom: 40px;
 }
 </style>
