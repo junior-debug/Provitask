@@ -1,16 +1,18 @@
 <template>
   <div class="ModalContainer">
     <div class="logo"></div>
-    <InputData placeholder="First name" />
+    <InputData placeholder="First name" V-model="firstName"/>
     <InputData placeholder="Last name" />
+    <InputData placeholder="User name" />
     <InputData placeholder="Email" />
     <InputData placeholder="Password" />
     <InputData placeholder="Confirm Password" />
+    <InputData placeholder="Phone" />
     <p class="fontBlack">
       By clicking below and creating an account,Iagree to ProviTask's Terms of
       Service and Privacy Policy.
     </p>
-    <button class="fontBold">CREATE ACCOUNT</button>
+    <button class="fontBold" @click="createAccount()">CREATE ACCOUNT</button>
   </div>
 </template>
 <script>
@@ -20,7 +22,18 @@ export default {
   components: {
     InputData,
   },
+  data: function (){
+    return {
+      firstName: "",
+    };
+  },
+  methods: {
+    createAccount(){
+      console.log(this.firstName);
+    },
+  },
 };
+
 </script>
 <style scoped>
 p {

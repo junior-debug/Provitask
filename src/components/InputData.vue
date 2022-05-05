@@ -1,5 +1,5 @@
 <template>
-  <input type="text" class="InputData fontBlack" :placeholder="placeholder" />
+  <input type="text" class="InputData fontBlack" :placeholder="placeholder"/>
 </template>
 <script>
 export default {
