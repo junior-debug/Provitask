@@ -17,7 +17,7 @@
       </p></router-link
     >
     <div class="midleSpace"></div>
-    <router-link to="/SignUp" class="menuOptions"
+    <router-link to="/signUpClient" class="menuOptions"
       ><p class="fontBlack lightGray font0em letterSpacing">
         Sign up
       </p></router-link
