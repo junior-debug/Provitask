@@ -28,6 +28,7 @@ export default {
     return {};
   },
   methods: {
+<<<<<<< Updated upstream
     async registerClient() {
       // Ejemplo para recibir los datos del state
       console.log(
@@ -93,6 +94,47 @@ mutation RegistroCliente(
           phone: "23231",
           token: "1234",
         },
+=======
+    async registerClient () {
+      const response =  await axios.post("http://3.87.96.160:1337/graphql",{
+      headers: {
+        Authorization : "Bearer 2488819c5478a084e2d45c1c7cc695bc467270925b823bf1763b108a0d0aeba840953746f30b5ecc274ffac794ea42fb0cad2b84593812cdb90a863e99dd30032d1533b7c73ea0b0a9fe7fb869a26b47497a2cd026f2e503b20dc8cd7a2014734abe5bc9955db1bc7596d099a1f52fac1452d2bf687ae242ab19729411cad445"
+      },
+      query: `mutation RegistroCliente(
+        $username: String!
+        $email: String!
+        $password: String!
+        $name: String!
+        $last_name: String!
+        $postal_code: String!
+        $token: String
+      ) {
+        createClient(data: {
+          name: $name,
+          last_name: $last_name,
+          email: $email,
+          password: $password,
+          postal_code: $postal_code,
+          username: $username,
+          token: $token
+        }) {
+          data {
+            id
+            attributes {
+              email
+            }
+          }
+        }
+      }`,
+      variables: {
+        name: "malparioJoangel",
+        last_name: "malparioJoangel",
+        email: "malparioJoangel@gmail.com",
+        password: "malparioJoangel",
+        postal_code: "123456",
+        username: "malparioJoangel"
+      },
+>>>>>>> Stashed changes
       });
       console.log(response);
       return response;
