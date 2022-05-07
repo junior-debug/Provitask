@@ -315,6 +315,7 @@ export default {
   justify-content: space-between;
   align-items: flex-end;
   text-align: end;
+  padding-right: 2em;
 }
 .button {
   width: 78%;
@@ -414,6 +415,8 @@ export default {
   height: 100%;
   flex-direction: column;
   display: flex;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 .helpers {
   width: 100%;

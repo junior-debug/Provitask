@@ -1,24 +1,28 @@
 <template>
   <div class="ModalContainer">
     <img class="logo" src="../assets/img/letras.png" alt="Plomero" />
+    <InputData placeholder="Email" widthInput="width: 350px;" />
+    <div>
+      <InputData placeholder="First name" widthInput="width: 120px;" />
+      <InputData
+        placeholder="Last name"
+        widthInput="width: 120px;"
+        style="margin-left: 50px"
+      />
+    </div>
+    <InputData placeholder="Phone" widthInput="width: 350px;" />
+    <InputData placeholder="Create a Password" widthInput="width: 350px;" />
+    <InputData placeholder="Zip Code" widthInput="width: 350px;" />
 
-    <InputData placeholder="First name" />
-    <InputData placeholder="Last name" />
-    <InputData placeholder="User name" />
-    <InputData placeholder="Email" />
-    <InputData placeholder="Password" />
-    <InputData placeholder="Confirm Password" />
-    <InputData placeholder="Phone" />
     <p class="fontBlack">
-      By clicking below and creating an account,Iagree to ProviTask's Terms of
-      Service and Privacy Policy.
+      By clicking below and creating an account,<p class="blue fontBold">I agree to ProviTask's Terms of
+      Service and Privacy Policy.</p> 
     </p>
     <button class="fontBold" @click="registerClient()">CREATE ACCOUNT</button>
   </div>
 </template>
 <script>
 import InputData from "@/components/InputData.vue";
-import axios from "axios";
 export default {
   name: "ModalContainer",
   components: {
@@ -31,21 +35,23 @@ export default {
     async registerClient() {
       // Ejemplo para recibir los datos del state
       console.log(
+        this.$store.state.email,
         this.$store.state.firstName,
         this.$store.state.lastName,
-        this.$store.state.userName,
-        this.$store.state.email,
+        this.$store.state.phone,
         this.$store.state.password,
-        this.$store.state.phone
+        this.$store.state.zipCode
       );
       // Fin del ejemplo
-      const response = await axios.post("http://3.87.96.160:1337/graphql", {
-        method: "post",
+      const response = await fetch("http://3.87.96.160:1337/graphql", {
+        method: "POST",
         headers: {
+          "Content-Type": "application/json",
           Authorization:
             "Bearer 2488819c5478a084e2d45c1c7cc695bc467270925b823bf1763b108a0d0aeba840953746f30b5ecc274ffac794ea42fb0cad2b84593812cdb90a863e99dd30032d1533b7c73ea0b0a9fe7fb869a26b47497a2cd026f2e503b20dc8cd7a2014734abe5bc9955db1bc7596d099a1f52fac1452d2bf687ae242ab19729411cad445",
         },
-        query: `
+        body: JSON.stringify({
+          query: `
         mutation RegistroCliente(
           $username: String!
           $email: String!
@@ -83,24 +89,30 @@ export default {
             }
           }
         }`,
-        variables: {
-          username: "eeeeeeee",
-          email: "eeeeeeee@gmail.com",
-          password: "eeeeeeee",
-          name: "eeeeeeee",
-          last_name: "eeeeeeee",
-          postal_code: "123456",
-          phone: "23231",
-          token: "1234",
-        },
-      });
-      console.log(response);
-      return response
-      }
-    },
-  
-};
+          variables: {
+            username: this.$store.state.firstName + this.$store.state.lastName + this.$store.state.zipCode,
+            email: this.$store.state.email,
+            password: this.$store.state.password,
+            name: this.$store.state.firstName,
+            last_name: this.$store.state.lastName,
+            postal_code: this.$store.state.zipCode,
+            phone: this.$store.state.phone,
+            token: "1234",
+          },
+        }),
+      })
+        .then((res) => res.json())
+        .then((result) => {
+          if(result.data != ""){
+            alert("Usuario creado con exito");
+            window.location.href = "../#/login";
+          }
+        });
 
+      return response;
+    },
+  },
+};
 </script>
 <style scoped>
 p {

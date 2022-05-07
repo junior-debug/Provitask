@@ -1,6 +1,8 @@
 <template>
   <nav class="nav">
-    <div class="logoContainer"></div>
+    <div class="logoContainer">
+      <img src="./assets/img/Logo.png" alt="logo" />
+    </div>
     <router-link to="/" class="menuOptions"
       ><p class="fontBlack lightGray font0em letterSpacing">
         HOME
@@ -17,7 +19,7 @@
       </p></router-link
     >
     <div class="midleSpace"></div>
-    <router-link to="/SignUp" class="menuOptions"
+    <router-link to="/signUpClient" class="menuOptions"
       ><p class="fontBlack lightGray font0em letterSpacing">
         Sign up
       </p></router-link

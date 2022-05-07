@@ -2,13 +2,12 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
+    email: '',
     firstName: '',
     lastName: '',
-    userName: '',
-    email: '',
+    phone: '',
     password: '',
-    confirmPassword: '',
-    phone: ''
+    zipCode: '',
   },
   getters: {
   },

@@ -16,11 +16,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/img/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
+  background-color: #f7f9fb;
 }
 </style>

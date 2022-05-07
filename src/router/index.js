@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import services from '../views/services.vue'
-import signUp from '../views/signUp.vue'
+import signUpProvider from '../views/signUpProvider.vue'
+import signUpClient from '../views/signUpClient.vue'
 import login from '../views/login.vue'
 import joinTo from '../views/joinTo.vue'
 
@@ -25,9 +26,14 @@ const routes = [
     component: services
   },
   {
-    path: '/signUp',
-    name: 'signUp',
-    component: signUp
+    path: '/signUpClient',
+    name: 'signUpClient',
+    component: signUpClient
+  },
+  {
+    path: '/signUpProvider',
+    name: 'signUpProvider',
+    component: signUpProvider
   },
   {
     path: '/login',

@@ -4,6 +4,7 @@
     class="InputData fontBlack"
     :placeholder="placeholder"
     @change="onChange($event)"
+    :style="widthInput"
   />
 </template>
 <script>
@@ -12,24 +13,25 @@ export default {
   props: {
     placeholder: String,
     value: String,
+    widthInput: String,
   },
   data() {
     return {};
   },
   methods: {
     onChange(event) {
-      if (this.placeholder === "First name") {
+      if (this.placeholder === "Email") {
+        this.$store.state.email = event.target.value;
+      } else if (this.placeholder === "First name") {
         this.$store.state.firstName = event.target.value;
       } else if (this.placeholder === "Last name") {
         this.$store.state.lastName = event.target.value;
-      } else if (this.placeholder === "User name") {
-        this.$store.state.userName = event.target.value;
-      } else if (this.placeholder === "Email") {
-        this.$store.state.email = event.target.value;
-      } else if (this.placeholder === "Password") {
-        this.$store.state.password = event.target.value;
       } else if (this.placeholder === "Phone") {
         this.$store.state.phone = event.target.value;
+      } else if (this.placeholder === "Create a Password") {
+        this.$store.state.password = event.target.value;
+      } else if (this.placeholder === "Zip Code") {
+        this.$store.state.zipCode = event.target.value;
       }
     },
   },
@@ -41,6 +43,5 @@ export default {
   font-size: 20px;
   border-radius: 5px;
   border: 1px solid gray;
-  width: 350px;
 }
 </style>
